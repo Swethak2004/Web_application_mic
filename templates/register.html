@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>REGISTER HERE</title>
+    <link rel="stylesheet" href="/static/register.css">
+</head>
+<body>
+    <!-- <h1 action="{{ url_for('register') }}"></h1> -->
+    <div class="register">
+    <video src="/static/video/video_register.mp4"autoplay loop muted plays-inline class="videos"></video>
+
+    {{ msg }}
+    <form method="post" action="{{ url_for('register') }}">
+        <h1>Register Form</h1><br>
+        <label> Name </label><input type="name" name="name" placeholder="Enter Name"><br>
+        <label for="">Gender</label><br>
+        <label><input class="radio" type="radio" name="gender" value="Male">Male </label>
+        <label><input class="radio" type="radio" name="gender"value="Female">Female</label><br>
+        <label> Phone_number </label><input type="name" name="phone_number" placeholder="Enter phonenumber"><br>
+        <label> Password  </label><input type="Password" name="password" placeholder="set Password"><br>
+        <label> Email </label><input type="email" name="email" placeholder="Enter Email"><br>
+        
+        <div class="btn"><input class="sub" type="submit" value="submit">
+            <input class="sub" type="Reset"></div>
+
+    </form>
+</body>
+</html>

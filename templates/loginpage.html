@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LOGIN YOUR ACCOUNT</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+ 
+<body>
+    <video src="/static/video/video_login.mp4"autoplay loop muted plays-inline class="myvideos"></video>
+    
+    <form  method="post" action="{{url_for('authentication')}}"><br>
+        <h1>Login Page</h1>
+        <label> UserName </label><input name="username"  type="username" placeholder="Enter UserName" ><br>
+        <label> Password  </label><input name="password"  type="Password" placeholder="Enter Password" ><br>
+        <button> Submit</button><br>
+        <a>Forget Password</a>
+    </form>
+</body>
+</html>
